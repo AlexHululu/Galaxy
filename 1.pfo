@@ -1,0 +1,125 @@
+
+
+中国版BPA潮流程序版本号:  6.006(  4.3.7   2018-06-10  )                                                             时间: 2019-07-02    
+
+
+
+
+* 潮流数据文件是：E:\PSD-BPA\PSDEDI~1\EXAMPLE\1.DAT
+[ INTERACTIVE RUN ]
+.一级控制语句，填写工程标识（如"IEEE30"）以及工程名称（如"TEST_SYSTEM"）；      ***COMMENT***
+(POWERFLOW,CASEID=PFDC1,PROJECT=TEST_SYSTEM1)
+/P_INPUT_LIST,ZONES=ALL\
+/P_OUTPUT_LIST,ZONES=ALL\
+/P_ANALYSIS_RPT,LEVEL=4\
+/RPT_SORT=ZONE\
+/NEW_BASE,FILE=PFDC1.BSE\
+/PF_MAP,FILE =PFDC1.MAP\
+/NETWORK_DATA\
+
+
+潮流方式名: PFDC1      工程名: TESTSYSTEM1             * * * 选项总结 * * *                                         时间: 2019-07-02    
+
+
+
+
+************************************************************************************************************************************
+*                                                                                                                                  *
+*                                                                                                                                  *
+*                                                                                                                                  *
+*               数据文件：               (X)   输入数据文件：       E:\PSD-BPA\PSDEDI~1\EXAMPLE\1.DAT                              *
+*                                        ( )   老库文件：                                                                          *
+*               ---- ---- ------         ( )   支路数据文件 :                              选择日期:                               *
+*                                              节点数据文件 :                                                                      *
+*                                                                                                                                  *
+*                                                                                                                                  *
+*                                                                                                                                  *
+*                                        基准容量   100.0 MVA                                                                      *
+*                                                                                                                                  *
+*               报告的排序顺序           ( )   节点名-基准电压                                                                     *
+*               ------ ---- -----        (X)   分区-节点名-基准电压                                                                *
+*                                        ( )   区域-节点名-基准电压                                                                *
+*                                                                                                                                  *
+*                                                                                                                                  *
+*                                                                                                                                  *
+*               列表选项                                                                                                           *
+*               -------- ---------                                                                                                 *
+*                                                                                                                                  *
+*               输入数据列表             (X)   不输出                                                                              *
+*               ----- -------            ( )   输出部分分区数据                                                                    *
+*                                        ( )   全部输出                                                                            *
+*                                                                                                                                  *
+*               输出结果列表             ( )   不输出                                                                              *
+*               ------ -------           ( )   输出部分分区数据                                                                    *
+*                                        (X)   全部输出                                                                            *
+*                                                                                                                                  *
+*               分析列表                 ( )   输出水平级 4                                                                        *
+*               -------- -------         ( )   输出部分分区数据                                                                    *
+*                                        ( )   输出部分拥有者数据                                                                  *
+*                                                                                                                                  *
+*               区域交换列表             ( )   不输出                                                                              *
+*               ---- ------ -------      (X)   输出联络线                                                                          *
+*                                        ( )   输出交换功率矩阵                                                                    *
+*                                        ( )   都输出                                                                              *
+*                                                                                                                                  *
+*                                                                                                                                  *
+*                                                                                                                                  *
+*               拥有者交换列表           (X)   不输出                                                                              *
+*               ----- ------ -------     ( )   输出联络线                                                                          *
+*                                        ( )   输出功率交换矩阵                                                                    *
+*                                        ( )   都输出                                                                              *
+*                                                                                                                                  *
+*                                                                                                                                  *
+*                                                                                                                                  *
+*                                        潮流结果二进制文件存为：E:\PSD-BPA\PSDEDI~1\                                              *
+************************************************************************************************************************************
+*** WARNING    Missing voltage data, global values used : VMAX, VMIN( 1.010 0.950)                                      *** WARNING
+*** WARNING                                                                                                             *** WARNING
+*** WARNING               (BV    发电机3 14.0                    85.0               1010                   )            *** WARNING
+*** WARNING   该支路的电阻大于等于电抗。R =  0.08500X =  0.07200                                                        *** WARNING
+*** WARNING   L     母线2   230. 母线C   230.       .085  .072        .0373                                             *** WARNING
+*** FATAL      下面数据卡中的节点 发电机1   17.0 不存在                                                                 *** FATAL
+*** FATAL               (T     发电机1 17.  母线1   230.             .0567             16.5 242.         )              *** FATAL
+*** FATAL     节点 发电机1    16.0 没有与之相连的支路，删除该节点。                                                     *** FATAL
+*** WARNING    Missing voltage data, global values used : VMAX, VMIN( 1.010 0.950)                                      *** WARNING
+*** WARNING                                                                                                             *** WARNING
+*** WARNING               (BV    发电机3 14.0                    85.0               1010                   )            *** WARNING
+*** WARNING    Missing voltage data, global values used : VMAX, VMIN( 1.010 0.950)                                      *** WARNING
+*** WARNING                                                                                                             *** WARNING
+*** WARNING               (BV    发电机3 14.0                    85.0               1010                   )            *** WARNING
+*** FATAL     PROGRAM ABORTED BY FATAL ERRORS                                                                           *** FATAL
+
+
+潮流方式名: PFDC1      工程名: TESTSYSTEM1             * * * 错误、警告等提示信息总结 * * *                         时间: 2019-07-02    
+
+*  提示信息包括   0 类型 "I" （提示信息）错误
+                  4 类型 "W" （警告）错误
+                  0 类型 "E"   错误
+                  3 类型 "F" （致命）错误
+                  0 类型 "A" （异常终止）错误
+*   错误信息包括：
+*** WARNING    Missing voltage data, global values used : VMAX, VMIN( 1.010 0.950)                                      *** WARNING
+*** WARNING                                                                                                             *** WARNING
+*** WARNING               (BV    发电机3 14.0                    85.0               1010                   )            *** WARNING
+*** WARNING   该支路的电阻大于等于电抗。R =  0.08500X =  0.07200                                                        *** WARNING
+*** WARNING   L     母线2   230. 母线C   230.       .085  .072        .0373                                             *** WARNING
+*** FATAL      下面数据卡中的节点 发电机1   17.0 不存在                                                                 *** FATAL
+*** FATAL               (T     发电机1 17.  母线1   230.             .0567             16.5 242.         )              *** FATAL
+*** FATAL     节点 发电机1    16.0 没有与之相连的支路，删除该节点。                                                     *** FATAL
+*** WARNING    Missing voltage data, global values used : VMAX, VMIN( 1.010 0.950)                                      *** WARNING
+*** WARNING                                                                                                             *** WARNING
+*** WARNING               (BV    发电机3 14.0                    85.0               1010                   )            *** WARNING
+*** WARNING    Missing voltage data, global values used : VMAX, VMIN( 1.010 0.950)                                      *** WARNING
+*** WARNING                                                                                                             *** WARNING
+*** WARNING               (BV    发电机3 14.0                    85.0               1010                   )            *** WARNING
+*** FATAL     PROGRAM ABORTED BY FATAL ERRORS                                                                           *** FATAL
+/SOLUTION\
+
+
+潮流方式名: PFDC1      工程名: TESTSYSTEM1                                                                          时间: 2019-07-02    
+
+
+
+
+*** FATAL      Program terminated by error conditions. If "F" errors have been encountered, correct and rerun.          *** FATAL
+*** FATAL      Otherwise report to programming staff.                                                                   *** FATAL
